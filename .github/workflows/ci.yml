@@ -1,0 +1,11 @@
+name: test
+
+on: [push]
+jobs:
+  github-action-demo:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: fenbi/demo-action@v1
+        with:
+          name: "demo-test"
